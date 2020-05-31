@@ -1,23 +1,15 @@
-## call-once-fn
+## match-semver
 
-Calls a callback only once.
+Checks match of version against semver comparators.
 
 ```
-var next = once('call-once-fn');
 var assert = require('assert');
+var match = once('match-semver');
 
-var results = [];
-
-function addResults() {
-  results.push(arguments);
-}
-
-var callback1 = once(addResults);
-assert.ok(!results.length);
-callback1('error', 'value1', 'value2');
-assert.equal(results.length, 1);
-
-assert.equal(results.length, 1);
-callback1('error', 'value1', 'value2');
-assert.equal(results.length, 1);
+assert.ok(!match('v1.0.0', { eq: 'v0.0.0' }));
+assert.ok(match('v1.0.0', { eq: 'v1.0.0' }));
+assert.ok(!match('v1.0.0', { eq: 'v2.0.0' }));
+assert.ok(!match('v1.0.0', { gte: 'v0.0.0', lt: 'v1.0.0' }));
+assert.ok(match('v1.0.0', { gte: 'v1.0.0', lt: 'v2.0.0' }));
+assert.ok(match('v1.0.0', { gte: 'v0.0.0', lt: 'v2.0.0' }));
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "semver-match",
+  "name": "match-semver",
   "version": "0.1.0",
   "description": "Checks match of version against semver comparators",
   "keywords": [
@@ -13,10 +13,10 @@
     "gt",
     "gte"
   ],
-  "homepage": "https://github.com/kmalakoff/semver-match",
+  "homepage": "https://github.com/kmalakoff/match-semver",
   "repository": {
     "type": "git",
-    "url": "git@github.com:kmalakoff/semver-match.git"
+    "url": "git@github.com:kmalakoff/match-semver.git"
   },
   "license": "MIT",
   "author": "Kevin Malakoff <kmalakoff@gmail.com> (https://github.com/kmalakoff)",
