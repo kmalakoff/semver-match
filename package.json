@@ -16,7 +16,7 @@
   "homepage": "https://github.com/kmalakoff/match-semver",
   "repository": {
     "type": "git",
-    "url": "git@github.com:kmalakoff/match-semver.git"
+    "url": "git+ssh://git@github.com/kmalakoff/match-semver.git"
   },
   "license": "MIT",
   "author": "Kevin Malakoff <kmalakoff@gmail.com> (https://github.com/kmalakoff)",
