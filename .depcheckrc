@@ -1,1 +1,1 @@
-ignores: ["match-semver", "depcheck", "@types/*", "@biomejs/*"]
+ignores: ["match-semver"]
